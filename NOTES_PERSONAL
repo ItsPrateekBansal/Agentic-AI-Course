@@ -1,0 +1,6 @@
+WORKFLOW DESIGN PATTERNS
+    - PROMPT CHAINING : Decompompose into fixed sub-tasks.
+    - ROUTING : Direct an input into a specialized sub-task ensuring separation of concerns. 
+    - PARALLELIZATION : Breaking down tasks and running multiple tasks concurrenlty.
+    - ORCHESTRATOR-WORKER : Complex tasks are broken down dynamically and combined. (similar to PARALLELIZATION, but here breaking down and aggregation is down by LLM itself)
+    - EVALUATOR-OPTIMIZER : 
