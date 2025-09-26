@@ -3,4 +3,17 @@ WORKFLOW DESIGN PATTERNS
     - ROUTING : Direct an input into a specialized sub-task ensuring separation of concerns. 
     - PARALLELIZATION : Breaking down tasks and running multiple tasks concurrenlty.
     - ORCHESTRATOR-WORKER : Complex tasks are broken down dynamically and combined. (similar to PARALLELIZATION, but here breaking down and aggregation is down by LLM itself)
-    - EVALUATOR-OPTIMIZER : 
+    - EVALUATOR-OPTIMIZER : LLM Output is validated by another.
+
+By contrast, Agents:-
+    - are open-ended
+    - have feedback loops
+    - no fixed path
+    which makes them unpredictable as how long will they take to complete a task. or Will they ever complete the task or not ? There's this uncertainity.
+
+Risks of Agents Framework:-
+    - unpredictable path
+    - unpredictable Output
+    - unpredictable cost
+    => hence, monitoring is important
+    => Guardrails are important to ensure agents behave safely, consistently and within intended boundaries
